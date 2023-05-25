@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+
+}
+
+.content {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    justify-content: center;
+    display: grid;
+    max-width: 1150px;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+}
+
+.card {
+    background-color: hsla(217, 30%, 14%, 0.534);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px -10px rgba(58, 56, 56, 0.829);
+    padding: 38px;
+
+}
+
+.card img {
+    margin: 0 20px 0 0;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 81%);
+    width: 30px;
+
+}
+
+.title {
+    color: white;
+    display: flex;
+    margin-top: -10px;
+}
+
+.title h1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(0, 0%, 81%);
+
+}
+
+.title h2 {
+    color: hsla(0, 0%, 81%, 0.767);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.text {
+    color: white;
+}
+
+.first-paragraph {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 10px 0px -20px;
+    padding: 20px;
+
+}
+
+.second-paragraph {
+    color: hsla(0, 0%, 81%, 0.753);
+}
+
+.card-1 {
+    grid-area: daniel;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-color: hsla(263, 55%, 52%, 0.911);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    padding: 30px;
+}
+
+.card-1 .first-paragraph {
+    padding: 10px 40px 20px 20px;
+}
+
+.card-2 {
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+    padding: 30px;
+}
+
+.card-3 {
+    grid-area: jeanette;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+}
+
+.title-edited h1 {
+    color: hsl(217, 19%, 35%);
+}
+
+.title-edited h2 {
+    color: hsl(217, 19%, 35%, 0.6);
+}
+
+.card-3 .text p {
+    color: hsl(217, 19%, 35%);
+}
+
+.card-3 .text .first-paragraph {
+
+    padding: 10px 30px 30px 20px;
+}
+
+.card-3 .text .second-paragraph {
+    color: hsla(217, 19%, 35%, 0.6);
+}
+
+.card-4 {
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+    padding: 30px;
+}
+
+.card-5 {
+    grid-area: kira;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+}
+
+.card-5 .text {
+    color: hsl(217, 19%, 35%);
+}
+
+.card-5 .text .second-paragraph {
+    color: hsla(217, 19%, 35%, 0.6);
+    padding: 10px 20px 0 0;
+}
+
+@media screen and (max-width:680px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
